@@ -4,7 +4,9 @@ A basic website -- just enough to test out hooking things up to render, and not 
 We will go over steps in lecture. You should fill out the following:
 
 ## What steps do I need to do when I download this repo to get it running?
-
+ pipenv --python 3.11
+ 
+ pipenv install
 
 
 ## What commands starts the server?
