@@ -10,6 +10,8 @@ We will go over steps in lecture. You should fill out the following:
 
 
 ## What commands starts the server?
+pip install pipenv && pipenv install
+pipenv run gunicorn server:app
 
 
 ## Before render
