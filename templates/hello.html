@@ -23,14 +23,29 @@
                        required>
             </div>
             <div class="form-input">
-                <label for="address">Why are you here</label>
+                <label for="why">Why are you here</label>
                 <input type="text" 
-                       id="address" name="address" 
+                       id="why" name="why" 
                        >
             </div>
             <div class="btn"><button type="submit">
                     Add Guest
                 </button></div>
         </form>
+
+        <div class="div-table">
+            {% if data %}
+            <div class="div-table-row">
+                <div class="div-table-col" align="center">name</div>
+                <div  class="div-table-col">why</div>
+             </div>
+            {% for entry in data %}
+           <div class="div-table-row">
+                 <div class="div-table-col">{{ entry }}</div>
+           </div>
+           {% endfor %}
+           {% else %}
+     </div>
+     {% endif %}
 </body>
 </html>

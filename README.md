@@ -13,6 +13,8 @@ We will go over steps in lecture. You should fill out the following:
 pip install pipenv && pipenv install
 pipenv run gunicorn server:app
 
+external database url 
+
 
 ## Before render
 
