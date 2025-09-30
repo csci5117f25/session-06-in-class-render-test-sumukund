@@ -8,7 +8,7 @@ flask = "*"
 gunicorn = "*"
 pygame = "*"
 psycopg2 = "*"
-
+dotenv = "*"
 [dev-packages]
 
 [requires]

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, url_for, redirect
+from flask import Flask, render_template, request, url_for, redirect, session
 import psycopg2
 from dotenv import load_dotenv
 import os
@@ -8,6 +8,7 @@ load_dotenv()
 
 DATABASE_URL=os.getenv('DATABASE_URL')
 
+app.secret_key = os.environ['FLASK_SECRET']
 
 @app.route('/')
 @app.route('/<name>')
